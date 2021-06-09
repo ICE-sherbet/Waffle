@@ -28,6 +28,7 @@ class dictionaryWidgetKey(Enum):
     buildButton = "実行(F5)"
     openButton = "開く"
     saveButton = "保存"
+    quickSaveButton = "ラベルで保存"
 
 
     pathlabel = "クイック保存パス"

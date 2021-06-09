@@ -932,7 +932,7 @@ class Comet2:
             self._of = (r & 0x8000) >> 15
             r = (r << 1) & 0xffff
         self._zf = int(r == 0)
-        self._sf = 0
+        self._sf = (r & 0x8000) >> 15
         self.set_gr(reg, r)
         self.output_debug(elem, f"GR{reg} <- {r:04x} <GR{reg}({v1:04x}) <<L {adr_str}>")
 
